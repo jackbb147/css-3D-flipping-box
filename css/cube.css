@@ -7,6 +7,8 @@
 }
 :root{
   --Z-TRAN: 60px;
+
+  --A: 1;
 }
 .cube {
   width: 100%;
@@ -49,12 +51,12 @@
 }
 
 
-.face-1  { background: hsla(  50, 50%, 40%, 0.7); }
-.face-2    { background: hsla(240, 100%, 50%, 0.7); }
-.face-3   { background: hsla(120, 100%, 50%, 0.7); }
-.face-4 { background: hsla(300, 100%, 50%, 0.7); }
-.face-5  { background: hsla(180, 100%, 50%, 0.7); }
-.face-6  { background: hsla( 60, 100%, 50%, 0.7); }
+.face-1  { background: hsla(  50, 50%, 40%, var(--A)); }
+.face-2    { background: hsla(240, 100%, 50%, var(--A)); }
+.face-3   { background: hsla(120, 100%, 50%, var(--A)); }
+.face-4 { background: hsla(300, 100%, 50%, var(--A)); }
+.face-5  { background: hsla(180, 100%, 50%, var(--A)); }
+.face-6  { background: hsla( 60, 100%, 50%, var(--A)); }
 .cube_flipper {
   width: 100%;
   height: 100%;
@@ -70,5 +72,5 @@
   /*border: 2px solid black;*/
   margin: auto;
   padding: 0;
-  perspective: 990px;
+  perspective: 1300px;
 }
